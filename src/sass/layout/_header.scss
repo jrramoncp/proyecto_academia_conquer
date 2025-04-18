@@ -1,0 +1,135 @@
+@use '../abstract/_variables' as v;
+@use '../abstract/_mixins' as m;
+
+header.header{
+    background: v.$conquer-gradient;
+    .container{
+        //header base styles
+        padding: 1rem;
+        padding-bottom: 1rem;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        @include m.breakpoint("laptop"){
+            align-items: center;
+            justify-content: space-around;
+        }
+        @include m.breakpoint("desktop"){
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        //hamburguer menu icons
+        .material-symbols-outlined{
+            font-size: 1.2rem;
+            // color: v.$link-color;
+        }
+
+        .menus__container{
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            @include m.breakpoint("laptop"){
+                gap: 0;
+            }
+            @include m.breakpoint("desktop"){
+                gap: 0;
+            }
+        }
+        
+        //input buttons 
+        input[type="checkbox"] {
+            display: none;
+        }
+        input#nav-toggle:checked ~ nav.main__nav{
+            display: block;
+        }
+
+        label{
+            @include m.breakpoint("laptop"){
+                display: none;
+            }
+            @include m.breakpoint("desktop"){
+                display: none;
+            }
+        }
+        //logo an menus styles
+        .logo{
+            width: 150px;
+            @include m.breakpoint("laptop"){
+                width: 200px;
+            }
+            @include m.breakpoint("desktop"){
+                width: 250px;
+            }
+        }
+
+        .main__nav, .login__menu{
+            display: none;
+            position: absolute;
+            width: 100%;
+            background-color: white;
+            top: 3.5rem;
+            right: 0;
+            text-align: center;
+            @include m.breakpoint("tablet"){
+                top: 3.5rem;
+            }
+            @include m.breakpoint("laptop"){
+                display: inline;
+                position: relative;
+                top: 0;
+                width: auto;
+                background: none;
+            }
+            @include m.breakpoint("desktop"){
+                display: inline;
+                position: relative;
+                top: 0;
+                width: auto;
+                background: none;
+            }
+
+            ul{
+                list-style-type: none;
+                padding: 0;
+                @include m.breakpoint("laptop"){
+                    @include m.reset_list();
+                }
+                @include m.breakpoint("desktop"){
+                    @include m.reset_list();
+                }
+                li{
+                    padding: 10px;
+                    a{
+                        text-decoration: none;
+                        
+                        color: black;
+                        text-transform: uppercase;
+                        font-weight: v.$font-semibold;
+                        @include m.breakpoint("laptop"){
+                            font-size: 1rem;
+                            font-weight: v.$font-regular;
+                            &:hover{
+                                text-decoration: underline;
+                                // color: v.$link-hover-color;
+                            }
+                            
+                        }
+                        @include m.breakpoint("desktop"){
+                            font-size: 1rem;
+                            font-weight: v.$font-regular;
+                            &:hover{
+                                text-decoration: underline;
+                                // color: v.$link-hover-color;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

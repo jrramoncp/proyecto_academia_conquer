@@ -1,0 +1,32 @@
+@use '../abstract/_variables' as v;
+
+//Breakpoints Media Querys
+@mixin breakpoint($point) {
+    @if $point == desktop {
+      @media (min-width: 1440px) { @content; }
+    } @else if $point == laptop {
+      @media (max-width: 1439px) and (min-width:1024px ) { @content; }
+    } @else if $point == tablet {
+      @media (max-width: 1023px) and (min-width: 768px) { @content; }
+    } @else if $point == mobile {
+      @media (max-width: 767px) { @content; }
+    }
+  }
+
+
+
+  // Reset List
+
+@mixin reset-list(){
+    display: flex;
+    list-style-type: none;
+    gap: 0px;
+    align-items: center;
+    li{
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+
