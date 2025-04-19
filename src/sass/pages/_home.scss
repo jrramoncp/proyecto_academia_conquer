@@ -109,7 +109,7 @@
                             align-items: center;
                             padding-left: 1.5rem;
                             display: inline-block;
-                            background-image: url(img/check-icon.svg);
+                            background-image: url(img/shared/check-icon.svg);
                             background-repeat: no-repeat;
                             background-position: top 2px left;
                             background-size: 1.2rem;
@@ -295,11 +295,20 @@
                     padding: 0.5rem;
                     font-weight: v.$font-light;
                     text-align: center;
-                    padding-bottom: 1rem;
+                    padding-bottom:1rem;
                 }
 
                 a{
-                    max-width: 20%;
+                    max-width: 100%;
+                    @include m.breakpoint("tablet"){
+                        max-width: 50%;
+                    }
+                    @include m.breakpoint("laptop"){
+                        max-width: 20%;
+                    }
+                    @include m.breakpoint("desktop"){
+                        max-width: 20%;
+                    }
                 }
             }
         }
