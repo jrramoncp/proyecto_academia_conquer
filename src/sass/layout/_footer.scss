@@ -1,3 +1,7 @@
 @use '../abstract/_variables' as v;
 @use '../abstract/_mixins' as m;
 
+.footer{
+    background-color: v.$black-color;
+    padding: 2rem;
+}
