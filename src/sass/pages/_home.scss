@@ -28,4 +28,67 @@
             }
         }
     }
+    .formaciones{
+        .container{
+            .formaciones__title{
+                padding-top: 1rem;
+                padding-bottom: 3rem;
+                position: relative;
+                h2{
+                    font-size: 1.5rem;
+                    text-align: center;
+                    padding-bottom: 2rem;
+                }
+                p{
+                    text-align: center;
+                    padding-bottom: 2rem;
+                    
+                    &::after{
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        width: 25%;
+                        height: 2px;
+                        background: v.$conquer-gradient;
+                        bottom: 2.5rem;
+                        left: 50%;
+                        transform: translate(-50%);
+
+                    }
+                }
+            }
+
+            .course{
+                margin-bottom: 2rem;
+                img{
+                    max-width: 100%
+                }
+                h3{
+                    font-size: 1.3rem;
+                    padding-bottom: 1rem;
+                }
+                p{
+                    padding-bottom: 1rem;
+                }
+
+                ul{
+                    list-style-type: none;
+                    margin-bottom: 1rem;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        padding-left: 1.5rem;
+                        display: inline-block;
+                        background-image: url(img/check-icon.svg);
+                        background-repeat: no-repeat;
+                        background-position: top 2px left;
+                        background-size: 1.2rem;
+                        padding-bottom: 1rem;
+                    }
+                }
+
+
+            }
+        }
+    }
 }
