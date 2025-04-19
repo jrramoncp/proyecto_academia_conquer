@@ -136,6 +136,7 @@
     .blog{
         .blog__title{
             position: relative;
+            margin-bottom: 3rem;
             h2{
                 font-size: 1.5rem;
                 text-align: center;
@@ -147,7 +148,7 @@
                     width: 25%;
                     height: 2px;
                     background: v.$conquer-gradient;
-                    bottom: 1rem;
+                    bottom: 0rem;
                     left: 50%;
                     transform: translate(-50%);
 
@@ -156,10 +157,44 @@
         }
 
         .news__container{
+            @include m.breakpoint("laptop"){
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+            }
+            @include m.breakpoint("desktop"){
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+            }
             .new{
-                padding-bottom: 2rem;
+                margin-bottom: 2rem;
+
+                @include m.breakpoint("tablet"){
+                    box-shadow: v.$article-shadow;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                @include m.breakpoint("laptop"){
+                    box-shadow: v.$article-shadow;
+                    flex-shrink: 1;
+                    max-width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                @include m.breakpoint("desktop"){
+                    box-shadow: v.$article-shadow;
+                    flex-shrink: 1;
+                    max-width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
                 img{
                     max-width: 100%;
+                    aspect-ratio: 16 / 9;
                 }
                 h3{
                     padding-bottom: 1rem;
@@ -175,10 +210,10 @@
                 p{
                     text-align: center;
                     font-weight: v.$font-extralight;
-                    padding-bottom: 1rem;
                     max-height: 100px;
                     overflow: hidden;
                     margin-bottom: 1rem;
+                    padding: 0.5rem;
                 }
             }
         }
