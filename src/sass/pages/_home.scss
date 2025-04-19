@@ -236,6 +236,9 @@
                 @include m.breakpoint("laptop"){
                     @include m.flex_reset();
                 }
+                @include m.breakpoint("desktop"){
+                    @include m.flex_reset();
+                }
                 .teacher{
                     display: flex;
                     flex-direction: column;
@@ -243,8 +246,13 @@
                     padding-bottom: 2rem;
                     @include m.breakpoint("tablet"){
                         @include m.article-design();
+                        justify-content: flex-start;
                     }
                     @include m.breakpoint("laptop"){
+                        @include m.article-design();
+                        justify-content: flex-start;
+                    }
+                    @include m.breakpoint("desktop"){
                         @include m.article-design();
                         justify-content: flex-start;
                     }
@@ -283,7 +291,7 @@
                 p{
                     padding-bottom: 1rem;
                     padding: 0.5rem;
-                    font-weight: v.$font-extralight;
+                    font-weight: v.$font-light;
                     text-align: center;
                 }
             }
