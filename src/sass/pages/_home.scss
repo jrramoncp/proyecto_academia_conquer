@@ -5,7 +5,9 @@
     .home__hero{
         .hero__video{
             iframe{
-                max-width: 100%;
+                width: 100%;
+                height: fit-content;
+                aspect-ratio: 16 / 9;
             }
         }
     }
