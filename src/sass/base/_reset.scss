@@ -25,8 +25,8 @@
   }
   @include m.breakpoint("laptop"){
     max-width: 1200px;
-    padding-left: 6.25rem;
-    padding-right: 6.25rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
   @include m.breakpoint("desktop"){
     max-width: 1800px;

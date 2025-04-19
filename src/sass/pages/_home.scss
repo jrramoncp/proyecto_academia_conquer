@@ -1,2 +1,12 @@
 @use '../abstract/_variables' as v;
 @use '../abstract/_mixins' as m;
+
+.home__main{
+    .home__hero{
+        .hero__video{
+            iframe{
+                max-width: 100%;
+            }
+        }
+    }
+}
