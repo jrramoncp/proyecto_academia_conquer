@@ -5,8 +5,6 @@ header.header{
     background: v.$conquer-gradient;
     .container{
         //header base styles
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -53,7 +51,9 @@ header.header{
                 width: 200px;
             }
             @include m.breakpoint("desktop"){
-                width: 250px;
+                width: 200px;
+                position: relative;
+                top: 3px;
             }
         }
 
