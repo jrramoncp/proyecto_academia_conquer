@@ -225,6 +225,7 @@
     }
     .teachers{
         background-color: #f5f5f5;
+        padding-bottom: 2rem;
         .container{
             .teachers__title{
                 padding-top: 1rem;
@@ -254,32 +255,44 @@
                 }
                 
             }
-            .teacher{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding-bottom: 2rem;
-                img{
-                    max-width: 50%;
-                    border-radius: 50%;
-                    padding-bottom: 0.5rem;
+            .teacher__card__container{
+                @include m.breakpoint("tablet"){
+                    display: flex;
+                    justify-content: space-between;
                 }
-                h3{
-                    font-size: 1.3rem;
-                    padding-bottom: 1rem;
-                    padding: 0.5rem;
-                }
-                h4{
-                    font-size: 0.8rem;
-                    color: v.$conquer-blue;
-                }
-                p{
-                    padding-bottom: 1rem;
-                    padding: 0.5rem;
-                    font-weight: v.$font-extralight;
-                    text-align: center;
+                .teacher{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 2rem;
+                    @include m.breakpoint("tablet"){
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 30%;
+                    }
+                    img{
+                        max-width: 50%;
+                        border-radius: 50%;
+                        padding-bottom: 0.5rem;
+                    }
+                    h3{
+                        font-size: 1.3rem;
+                        padding-bottom: 1rem;
+                        padding: 0.5rem;
+                    }
+                    h4{
+                        font-size: 0.8rem;
+                        color: v.$conquer-blue;
+                    }
+                    p{
+                        padding-bottom: 1rem;
+                        padding: 0.5rem;
+                        font-weight: v.$font-extralight;
+                        text-align: center;
+                    }
                 }
             }
+
             .teachers__cta{
                 padding: 2rem;
                 box-shadow: v.$article-shadow;
