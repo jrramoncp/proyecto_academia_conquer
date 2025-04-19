@@ -132,4 +132,23 @@
             }
         }
     }
+
+    // .blog{
+    //     .blog__title{
+    //         h2{
+    //             &::after{
+    //                 content: "";
+    //                 display: inline-block;
+    //                 position: absolute;
+    //                 width: 25%;
+    //                 height: 2px;
+    //                 background: v.$conquer-gradient;
+    //                 bottom: 2.5rem;
+    //                 left: 50%;
+    //                 transform: translate(-50%);
+
+    //             }
+    //         }
+    //     }
+    // }
 }
