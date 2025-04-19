@@ -30,3 +30,17 @@
 }
 
 
+//Cards
+@mixin article-design{
+  flex-shrink: 1;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@mixin flex-reset{
+  display: flex;
+  justify-content: space-between;
+  
+}

@@ -59,14 +59,10 @@
             }
             .courses__container{
                 @include m.breakpoint("laptop"){
-                    display: flex;
-                    justify-content: space-between;
-                    gap: 1rem;
+                    @include m.flex_reset();
                 }
                 @include m.breakpoint("desktop"){
-                    display: flex;
-                    justify-content: space-between;
-                    gap: 1rem;
+                    @include m.flex_reset();
                 }
                 .course{
                     margin-bottom: 2rem;
@@ -76,16 +72,11 @@
                     }
                     @include m.breakpoint("laptop"){
                         box-shadow: v.$article-shadow;
-                        flex-shrink: 1;
-                        max-width: 30%;
+                        @include m.article-design();
                     }
                     @include m.breakpoint("desktop"){
                         box-shadow: v.$article-shadow;
-                        flex-shrink: 1;
-                        max-width: 30%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
+                        @include m.article-design();
                     }
                     img{
                         max-width: 100%;
@@ -157,45 +148,28 @@
 
         .news__container{
             @include m.breakpoint("tablet"){
-                display: flex;
-                justify-content: space-between;
-                gap: 1rem;
+                @include m.flex_reset();
             }
             @include m.breakpoint("laptop"){
-                display: flex;
-                justify-content: space-between;
-                gap: 1rem;
+                @include m.flex_reset();
             }
             @include m.breakpoint("desktop"){
-                display: flex;
-                justify-content: space-between;
-                gap: 1rem;
+                @include m.flex_reset();
             }
             .new{
                 margin-bottom: 2rem;
                 box-shadow: v.$article-shadow;
                 @include m.breakpoint("tablet"){
                     box-shadow: v.$article-shadow;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    max-width: 30%;
+                    @include m.article-design();
                 }
                 @include m.breakpoint("laptop"){
                     box-shadow: v.$article-shadow;
-                    flex-shrink: 1;
-                    max-width: 30%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
+                    @include m.article-design();
                 }
                 @include m.breakpoint("desktop"){
                     box-shadow: v.$article-shadow;
-                    flex-shrink: 1;
-                    max-width: 30%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
+                    @include m.article-design();
                 }
                 img{
                     max-width: 100%;
@@ -257,8 +231,10 @@
             }
             .teacher__card__container{
                 @include m.breakpoint("tablet"){
-                    display: flex;
-                    justify-content: space-between;
+                    @include m.flex_reset();
+                }
+                @include m.breakpoint("laptop"){
+                    @include m.flex_reset();
                 }
                 .teacher{
                     display: flex;
@@ -266,9 +242,11 @@
                     align-items: center;
                     padding-bottom: 2rem;
                     @include m.breakpoint("tablet"){
-                        display: flex;
-                        flex-direction: column;
-                        max-width: 30%;
+                        @include m.article-design();
+                    }
+                    @include m.breakpoint("laptop"){
+                        @include m.article-design();
+                        justify-content: flex-start;
                     }
                     img{
                         max-width: 50%;
