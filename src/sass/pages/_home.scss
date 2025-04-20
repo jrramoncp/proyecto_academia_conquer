@@ -10,6 +10,63 @@
         }
         //HERO VIDEO
         .hero__video{
+            .video__text{
+                display: none;
+                @include m.breakpoint("laptop"){
+                        display: inline-block;
+                        color: white;
+                        position: absolute;
+                        top: 5%;
+                        left: 20%;
+                        right: 20%;
+                        h2{
+                            text-transform: uppercase;
+                            font-style: italic;
+                            text-align: center;
+                            font-size: 1.5rem;
+                            span{
+                                color: v.$conquer-blue;
+                                font-size: 1.5rem;
+                                text-decoration: underline;
+    
+                            }
+                        }
+                        p{
+                            text-align: center;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            color: v.$conquer-green;
+                            background-color: v.$conquer-gradient;
+                        }
+                }
+                @include m.breakpoint("desktop"){
+                    display: inline-block;
+                    color: white;
+                    position: absolute;
+                    top: 5%;
+                    left: 20%;
+                    right: 20%;
+                    h2{
+                        text-transform: uppercase;
+                        font-style: italic;
+                        text-align: center;
+                        font-size: 2rem;
+                        span{
+                            color: v.$conquer-blue;
+                            font-size: 2rem;
+                            text-decoration: underline;
+
+                        }
+                    }
+                    p{
+                        text-align: center;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: v.$conquer-green;
+                        background-color: v.$conquer-gradient;
+                    }
+                }
+            }
             video{
                 width: 100%;
                 height: fit-content;
