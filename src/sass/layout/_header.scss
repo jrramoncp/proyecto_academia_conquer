@@ -3,6 +3,8 @@
 
 header.header{
     background: v.$conquer-gradient;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
     .container{
         //header base styles
         position: relative;
@@ -62,7 +64,7 @@ header.header{
             position: absolute;
             width: 110%;
             background-color: white;
-            top: 4.6rem;
+            top: 2.2rem;
             right: -0.8rem;
             transform: translateY(-20px);
             transition: all 0.4s ease-in-out;
@@ -70,9 +72,10 @@ header.header{
             overflow: hidden;
             opacity: 0;
             pointer-events: none;
+            z-index: 7;
             @include m.breakpoint("tablet"){
-                top: 4.6rem;
-                right: -2rem;
+                top: 2.1rem;
+                right: -2.2rem;
             }
             @include m.breakpoint("laptop"){
                 all: unset;

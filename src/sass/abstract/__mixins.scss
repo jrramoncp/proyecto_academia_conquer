@@ -44,3 +44,24 @@
   justify-content: space-between;
   
 }
+
+@mixin banner-styles{
+  h2{
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 3px 3px 1px #0000006b;
+    span{
+        color: v.$conquer-blue;
+        text-shadow: 3px 3px 1px #0000006b;
+    }
+}
+p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: v.$conquer-green;
+    background-color: v.$conquer-gradient;
+    text-shadow: 3px 3px 1px #0000006b;
+}
+}

@@ -11,32 +11,45 @@
         //HERO VIDEO
         .hero__video{
             .video__text{
-                display: none;
+                color: white;
+                position: absolute;
+                top: 10%;
+                left: 20%;
+                right: 20%;
+                @include m.banner-styles();
+                h2{
+                    font-size: 0.8rem;
+                    max-width: 100%;
+                    span{
+                        font-size: inherit;
+                    }
+                }
+                p{
+                    font-size: 0.5rem;
+                }
+
+                @include m.breakpoint("tablet"){
+                    display: inline-block;
+                    color: white;
+                    position: absolute;
+                    top: 10%;
+                    left: 20%;
+                    right: 20%;
+                    @include m.banner-styles();
+                }
                 @include m.breakpoint("laptop"){
                         display: inline-block;
                         color: white;
                         position: absolute;
-                        top: 5%;
+                        top: 10%;
                         left: 20%;
                         right: 20%;
+                        @include m.banner-styles();
                         h2{
-                            text-transform: uppercase;
-                            font-style: italic;
-                            text-align: center;
                             font-size: 1.5rem;
                             span{
-                                color: v.$conquer-blue;
                                 font-size: 1.5rem;
-                                text-decoration: underline;
-    
                             }
-                        }
-                        p{
-                            text-align: center;
-                            font-size: 1.2rem;
-                            font-weight: bold;
-                            color: v.$conquer-green;
-                            background-color: v.$conquer-gradient;
                         }
                 }
                 @include m.breakpoint("desktop"){
@@ -46,24 +59,12 @@
                     top: 5%;
                     left: 20%;
                     right: 20%;
+                    @include m.banner-styles();
                     h2{
-                        text-transform: uppercase;
-                        font-style: italic;
-                        text-align: center;
                         font-size: 2rem;
                         span{
-                            color: v.$conquer-blue;
-                            font-size: 2rem;
-                            text-decoration: underline;
-
+                            font-size: inherit;
                         }
-                    }
-                    p{
-                        text-align: center;
-                        font-size: 1.2rem;
-                        font-weight: bold;
-                        color: v.$conquer-green;
-                        background-color: v.$conquer-gradient;
                     }
                 }
             }
@@ -85,6 +86,13 @@
                         position: absolute;
                         bottom: 5%;
                         right: 50%;
+                        @include m.breakpoint("laptop"){
+                            top: 50%;
+                            bottom: 0%;
+                        }
+                    }
+                    @include m.breakpoint("laptop"){
+                        display: block;
                     }
                     @include m.breakpoint("desktop"){
                         display: block;
