@@ -10,11 +10,13 @@
   font-family: v.$primary-font;
 }
 
+//FOR SMOOTH SCROLL LINKS (ARROW DOWN PRINCIPALY) 
 html {
   scroll-behavior: smooth;
 }
-//BASE STYLES
+//BASE STYLES//
 
+//base container reset
 .container{
   max-width: 350px;
   padding-left: 1rem;

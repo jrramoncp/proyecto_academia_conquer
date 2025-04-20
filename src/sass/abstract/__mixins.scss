@@ -39,12 +39,14 @@
   justify-content: space-between;
 }
 
+//mixin flex-reset
 @mixin flex-reset{
   display: flex;
   justify-content: space-between;
   
 }
 
+// mixin for home video banner
 @mixin banner-styles{
   h2{
     text-transform: uppercase;
