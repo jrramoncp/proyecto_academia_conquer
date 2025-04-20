@@ -10,6 +10,9 @@
   font-family: v.$primary-font;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 //BASE STYLES
 
 .container{

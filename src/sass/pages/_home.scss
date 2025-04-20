@@ -4,12 +4,34 @@
 .home__main{
     //HERO
     .home__hero{
+        @include m.breakpoint("desktop") {
+            background-color: black;
+            position: relative;
+        }
         //HERO VIDEO
         .hero__video{
-            iframe{
+            video{
                 width: 100%;
                 height: fit-content;
                 aspect-ratio: 16 / 9;
+                @include m.breakpoint("desktop"){
+                    max-height: 93vh;
+                    overflow: hidden;
+                    z-index: 1;
+                }
+            }
+            .arrow-down{
+                    display: none;
+                    img{
+                        max-width: 3rem;
+                        border-radius: 50%;
+                        position: absolute;
+                        bottom: 5%;
+                        right: 50%;
+                    }
+                    @include m.breakpoint("desktop"){
+                        display: block;
+                    }
             }
         }
     }
