@@ -52,5 +52,23 @@
             }
         }
     }
+
+    .legal__container{
+        .copy{
+            color: white;
+            span{
+                background: v.$conquer-gradient;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: bold;
+            }
+        }
+        p{  
+            text-align: center;
+            a{
+                color: white;
+            }
+        }
+    }
    
 }
