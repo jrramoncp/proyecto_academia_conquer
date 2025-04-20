@@ -74,7 +74,7 @@ header.header{
             pointer-events: none;
             z-index: 7;
             @include m.breakpoint("tablet"){
-                top: 2.1rem;
+                top: 2.21rem;
                 right: -2.2rem;
             }
             @include m.breakpoint("laptop"){
