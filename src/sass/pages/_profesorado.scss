@@ -1,0 +1,92 @@
+@use '../abstract/_variables' as v;
+@use '../abstract/_mixins' as m;
+
+.main__profesorado{
+    .title{
+        .container{
+            padding-top: 1rem;
+                padding-bottom: 3rem;
+                position: relative;
+                h1{
+                    font-size: 1.7rem;
+                    text-align: center;
+                    padding-bottom: 2rem;
+                }
+                p{
+                    text-align: center;
+                    padding-bottom: 2rem;
+                    
+                    &::after{
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        width: 25%;
+                        height: 2px;
+                        background: v.$conquer-gradient;
+                        bottom: 2.5rem;
+                        left: 50%;
+                        transform: translate(-50%);
+
+                    }
+                }
+        }
+    }
+
+    .teachers__cards{
+        .container{
+            @include m.breakpoint("tablet"){
+                @include m.flex_reset();
+                flex-wrap: wrap
+            }
+            @include m.breakpoint("laptop"){
+                @include m.flex_reset();
+                flex-wrap: wrap;
+            }
+            @include m.breakpoint("desktop"){
+                @include m.flex_reset();
+                flex-wrap: wrap;
+            }
+            .teacher{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 2rem;
+                @include m.breakpoint("tablet"){
+                    @include m.article-design();
+                    justify-content: flex-start;
+                    max-width: 35%
+                }
+                @include m.breakpoint("laptop"){
+                    @include m.article-design();
+                    justify-content: flex-start;
+                }
+                @include m.breakpoint("desktop"){
+                    @include m.article-design();
+                    justify-content: flex-start;
+                }
+                img{
+                    max-width: 50%;
+                    border-radius: 50%;
+                    padding-bottom: 0.5rem;
+                }
+                h3{
+                    font-size: 1.3rem;
+                    padding-bottom: 1rem;
+                    padding: 0.5rem;
+                    text-align: center;
+                }
+                h4{
+                    font-size: 0.8rem;
+                    color: v.$conquer-blue;
+                    text-align: center;
+                }
+                p{
+                    padding-bottom: 1rem;
+                    padding: 0.5rem;
+                    font-weight: v.$font-extralight;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

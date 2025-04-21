@@ -8,7 +8,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'), // Entrada principal
         // legal: resolve(__dirname, 'pages/aviso-legal.html'), // Aviso legal
-        // who: resolve(__dirname, 'pages/quienes-somos.html'), // Quienes somos
+        who: resolve(__dirname, 'pages/quienes-somos.html'), // Quienes somos
         // blog: resolve(__dirname, 'pages/blog.html'), //Blog
         // contact: resolve(__dirname, 'pages/contact.html'), // Contact
         // curso1: resolve(__dirname, 'pages/curso1.html'), //Curso1
