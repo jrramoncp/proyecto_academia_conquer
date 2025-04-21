@@ -46,6 +46,14 @@
   
 }
 
+//arrow up styles
+
+@mixin arrow-up{
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
 // mixin for home video banner
 @mixin banner-styles{
   h2{

@@ -1,0 +1,39 @@
+@use '../abstract/_variables' as v;
+@use '../abstract/_mixins' as m;
+
+.main__legal_advise{
+    background: linear-gradient(v.$black-color 5%, white 5%, white 100%);
+    background-size: 10%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    .container{
+        background-color: white;
+        max-width: 80%;
+        border-radius: 1rem;
+        box-shadow: v.$article-shadow;
+        .last__update{
+            padding-top: 1rem;
+            margin-bottom: 1rem;
+            h1{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+            p{
+                padding-bottom: 2rem;
+            }
+            article{
+                padding-bottom: 1rem;
+                h2{
+                    font-size: 1.5rem;
+                    text-align: center;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+    .arrow__up{
+        @include m.arrow-up();
+        padding-bottom: 0;
+    }
+
+}
