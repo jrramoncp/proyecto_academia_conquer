@@ -35,6 +35,12 @@
             justify-content: space-between;
             padding: 0.5rem;
            }
+           @include m.breakpoint("desktop"){
+            display: flex;
+            flex-shrink: 1;
+            justify-content: space-between;
+            padding: 0.5rem;
+           }
             article{
                 box-shadow: v.$article-shadow;
                 padding: 1rem;
@@ -49,6 +55,11 @@
                     padding-bottom: 1rem;
                     height: fit-content;
                 }
+                @include m.breakpoint("desktop"){
+                    max-width: 22%;
+                    padding-bottom: 1rem;
+                    height: fit-content;
+                }
                 img{
                 max-width: 50%;
                 @include m.breakpoint("tablet"){
@@ -58,6 +69,11 @@
                     margin-top: 1rem;
                     max-width: 100px;
                     height: 100px;
+                }
+                @include m.breakpoint("desktop"){
+                    margin-top: 1rem;
+                    max-width: 150px;
+                    height: 150px;
                 }
             }
                 div{
@@ -72,7 +88,7 @@
                         font-weight: v.$font-light;
                         font-size: 0.9rem;
                         font-style: italic;
-                        padding-bottom: 0.5rem;
+                        padding-bottom: 1rem;
                         @include m.breakpoint("laptop"){
                             font-size: 0.7rem;
                         }
