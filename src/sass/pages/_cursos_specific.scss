@@ -19,6 +19,7 @@
             @include m.flex-reset();
             padding-bottom: 2rem;
             gap: 2rem;
+            align-items: center;
         }
         .hero__text{
             @include m.breakpoint("laptop"){
@@ -87,8 +88,10 @@
             }
             img{
                 max-width: 100%;
+                &.chema{
+                    max-width: 80%;
+                }
             }
-            @img 
         }
     }
 
