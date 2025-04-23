@@ -13,7 +13,7 @@ export default defineConfig({
         cursoBlockchain: resolve(__dirname, 'pages/cursos-blockchain.html'), //Curso2
         cursoCibersegruidad: resolve(__dirname, 'pages/cursos-ciberseguridad.html'), //Curso3
         cursos: resolve(__dirname, 'pages/cursos.html'), //Cursos
-        // blog: resolve(__dirname, 'pages/blog.html'), //Blog
+        blog: resolve(__dirname, 'pages/blog.html'), //Blog
         // contact: resolve(__dirname, 'pages/contact.html'), // Contact
         // login: resolve(__dirname, 'pages/login.html'), //Login
         // noti1: resolve(__dirname, 'pages/noticia1.html'), //Noticia1

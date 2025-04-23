@@ -1,0 +1,7 @@
+@use '../abstract/_variables' as v;
+@use '../abstract/_mixins' as m;
+
+.blog__main{
+    height: 5rem;
+    background-color: red;
+}
