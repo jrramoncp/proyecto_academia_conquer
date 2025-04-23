@@ -1,7 +1,105 @@
 @use '../abstract/_variables' as v;
 @use '../abstract/_mixins' as m;
 
-.specific{
-    height: 500px;
-    background-color: red;
+.master{
+   .container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .hero{
+        @include m.breakpoint("tablet"){
+            display: flex;
+            flex-direction: column;
+        }
+        @include m.breakpoint("laptop"){
+            @include m.flex-reset();
+            padding-bottom: 2rem;
+            gap: 2rem;
+        }
+        @include m.breakpoint("desktop"){
+            @include m.flex-reset();
+            padding-bottom: 2rem;
+            gap: 2rem;
+        }
+        .hero__text{
+            @include m.breakpoint("laptop"){
+                max-width: 50%;
+            }
+            @include m.breakpoint("desktop"){
+                max-width: 50%;
+            }
+            h2{
+                font-size: 0.8rem;
+                font-weight: v.$font-regular;
+                text-align: center;
+                @include m.breakpoint("tablet"){
+                    text-align: left;
+                    font-size: 1rem;
+                }
+                @include m.breakpoint("laptop"){
+                    text-align: left;
+                    font-size: 1.2rem;
+                }
+                @include m.breakpoint("desktop"){
+                    text-align: left;
+                    font-size: 1.5rem;
+                }
+            }
+            h1{
+                font-size: 1.2rem;
+                text-align: center;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                @include m.breakpoint("tablet"){
+                    font-size: 1.5rem;
+                    text-align: left;
+                }
+                @include m.breakpoint("laptop"){
+                    font-size: 1.8rem;
+                    text-align: left;
+                }
+                @include m.breakpoint("desktop"){
+                    font-size: 2.2rem;
+                    text-align: left;
+                }
+            }
+
+            p{
+                text-align: center;
+                @include m.breakpoint("tablet"){
+                    font-size: 1.2rem;
+                    text-align: left;
+                }
+                @include m.breakpoint("laptop"){
+                    font-size: 1.2rem;
+                    text-align: left;
+                }
+                @include m.breakpoint("desktop"){
+                    font-size: 1.3rem;
+                    text-align: left;
+                }
+            }
+
+
+        }
+        .hero__img{
+            @include m.breakpoint("tablet"){
+                align-self: center;
+            }
+            img{
+                max-width: 100%;
+            }
+            @img 
+        }
+    }
+
+    .info{
+        article{
+            .img__container{
+                img{
+                    max-width: 1.5rem;
+                }
+            }
+        }
+    }
+   }
 }
