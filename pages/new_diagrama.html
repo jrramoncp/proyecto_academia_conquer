@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Conquer Blocks - Blog</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+          <a href="../index.html"><img class="logo" src="../img/shared/logo-conquer.avif" alt="logo de conquer blocks" height="20"></a>
+          <div class="menus__container">
+          <!-- checkbox is for burguer menu button in mobile and tablet -->
+          <input type="checkbox" id="nav-toggle">
+          <label for="nav-toggle" class="nav-toggle"><span class="material-symbols-outlined">menu</span></label>
+              <nav class="main__nav">
+                  <ul>
+                      <li><a href="../index.html">Home</a></li>
+                      <li><a href="/proyecto_academia_conquer/pages/quienes-somos.html">Quiénes somos</a></li>
+                      <li><a href="/proyecto_academia_conquer/pages/cursos.html">Cursos</a></li>
+                      <li><a href="/proyecto_academia_conquer/pages/blog.html">Blog</a></li>
+                      <li><a href="pages/registro.html">Registro</a></li>
+                      <li><a href="pages/login.html">Login</a></li>
+                      <li><a href="pages/contact.html">Contacto</a>  </li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </header>
+  <main class="new__main">
+    <section class="title">
+        <h1>¿Qué es un Diagrama de Flujo y Por Qué es tan Útil?</h1>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <p>¿Alguna vez te has preguntado cómo los programadores planifican sus programas antes de escribir una sola línea de código? ¿O cómo se representan los procesos de una manera visual y sencilla? Todo esto se hace con una herramienta muy poderosa llamada *diagrama de flujo*. Pero, ¿qué es realmente? ¿Cómo se usa en programación? Y lo más importante, ¿por qué es tan útil para entender cualquier proceso? En este artículo, te explicaremos de manera clara y sencilla qué es un diagrama de flujo y cómo puede ayudarte en la programación y en la vida cotidiana.</p>
+            
+            <article>
+                <h2>¿Qué es un Diagrama de Flujo?</h2>
+                <p>Un *diagrama de flujo* es una representación visual de un proceso mediante símbolos y flechas que indican el flujo y el orden de ejecución. En pocas palabras, es un mapa que muestra los pasos a seguir para resolver un problema o completar una tarea.</p>
+                <p>Por ejemplo, si queremos hacer un café, el diagrama de flujo de este proceso sería:</p>
+                <ol>
+                    <li>Inicio</li>
+                    <li>Calentar agua</li>
+                    <li>Añadir café en el filtro</li>
+                    <li>Verter el agua caliente</li>
+                    <li>Servir en una taza</li>
+                    <li>Fin</li>
+                </ol>
+                <p>Cada paso se representa con una figura específica que indica su función, y las flechas muestran el orden en que se deben ejecutar. Esto facilita la comprensión de procesos y algoritmos.</p>
+            </article>
+
+            <article>
+                <h2>¿Para Qué Sirve un Diagrama de Flujo en Programación?</h2>
+                <p>Los diagramas de flujo no solo son útiles para programadores, sino también para cualquier persona que necesite organizar procesos complejos. Sus principales beneficios son:</p>
+                <ul>
+                    <li><strong>**Organizar ideas antes de programar:**</strong> Permiten visualizar la lógica de un programa antes de escribir código.</li>
+                    <li><strong>**Detectar errores o pasos innecesarios:**</strong> Al ser visuales, ayudan a identificar problemas en la lógica antes de implementarla.</li>
+                    <li><strong>**Facilitar la comunicación:** </strong>Son una excelente herramienta para explicar cómo funciona un programa sin necesidad de escribir código.</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Símbolos Básicos de un Diagrama de Flujo</h2>
+                <p>Para construir un diagrama de flujo, se utilizan diferentes símbolos que representan distintas funciones:</p>
+                <ul>
+                    <li> 🟢 <strong>**Óvalo:**</strong> Representa el *inicio* y el *fin* del proceso.</li>
+                    <li> 🔷 <strong>**Rombo:**</strong> Se usa para tomar *decisiones* (por ejemplo, "¿tienes leche? Sí / No").</li>
+                    <li> 🟩 <strong>**Rectángulo:**</strong> Representa una *acción* o proceso (por ejemplo, "sumar dos números").</li>
+                    <li> ➡ <strong>**Flecha:**</strong> Indica la *dirección* del flujo del proceso.</li>
+                </ul>
+                <p>Con estos elementos, podemos representar cualquier algoritmo o proceso de forma clara y ordenada.</p>
+            </article>
+
+            <article>
+                <h2>Ejemplo Práctico de un Diagrama de Flujo en Programación</h2>
+                <p>Imagina que queremos hacer un programa que determine si un número es par o impar</p>
+                <p>Si lo representamos como un diagrama de flujo, se vería asi:</p>
+                <ol>
+                    <li>**Inicio**</li>
+                    <li>Pedir un número al usuario</li>
+                    <li>Calcular el resto de la división entre el número y 2</li>
+                    <li> Evaluar si el resto es 0 <ul>
+                        <li>Si es 0 → Mostrar "El número es par"</li>
+                        <li>Si no es 0 → Mostrar "El número es impar"</li>
+                    </ul></li>
+                    <li>**Fin**</li>
+                </ol>
+                <p>Este diagrama nos ayuda a visualizar la lógica antes de escribir el código, reduciendo errores y facilitando la comprensión del proceso.</p>
+            </article>
+
+            <article>
+                <h2>Beneficios de Usar Diagramas de Flujo</h2>
+                <p>Aprender a hacer diagramas de flujo tiene muchas ventajas:</p>
+                <ul>
+                    <li><strong>**Simplifican problemas complejos:** </strong>Nos ayudan a desglosar un problema en pasos pequeños y manejables.</li>
+                    <li><strong>**Mejoran la comprensión del código:** </strong>Son una herramienta excelente para aprender y enseñar programación.</li>
+                    <li><strong>**Facilitan la depuración de errores:**</strong> Permiten detectar problemas en la lógica antes de que lleguen al código.</li>
+                    <li><strong>**Se usan en muchas áreas:**</strong> No solo en programación, sino también en negocios, logística y procesos industriales.</li>
+                </ul>
+                <p>Los diagramas de flujo son herramientas esenciales que, una vez que aprendas a utilizarlas, se convertirán en una parte fundamental de tu proceso de planificación.</p>
+            </article>
+
+            <article>
+                <h2>Conclusión</h2>
+                <p>En resumen, un **diagrama de flujo** es una forma visual de representar un proceso o algoritmo mediante símbolos y flechas. Es una herramienta clave en la programación porque nos ayuda a organizar ideas, detectar errores y mejorar la lógica de nuestro códig</p>
+            </article>
+            <div class="arrow__up">
+                <a href="#header"><img src="../img/shared/arrow-up.png" alt="arrow up icon"></a>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a href="index.html"><img class="logo" src="../img/shared/logo-conquer.avif" alt="logo de conquer blocks" height="20"></a>
+      <!-- FOOTER NAV -->
+      <nav class="footer__nav">
+          <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="/proyecto_academia_conquer/pages/quienes-somos.html">Quiénes somos</a></li>
+              <li><a href="/proyecto_academia_conquer/pages/cursos.html">Cursos</a></li>
+              <li><a href="/proyecto_academia_conquer/pages/blog.html">Blog</a></li>
+              <li><a href="pages/registro.html">Registro</a></li>
+              <li><a href="pages/login.html">Login</a></li>
+              <li><a href="pages/contact.html">Contacto</a>  </li>
+              
+          </ul>
+      </nav>
+      <aside class="social">
+        <ul>
+          <li><a href="https://www.instagram.com/conquerblocks/?hl=es"><img src="../img/shared/instagram-icon.svg" alt="instagram icon"></a></li>
+          <li><a href="https://www.facebook.com/p/Conquer-Blocks-Powered-by-ConquerX-100091562268338/?paipv=0&eav=AfaSESk3NzLNqoeDh1Ojbo1DwKwQAOeg2VoQvmiW1YXrS7cgBAvleKcOAlJPszN2tGw&_rdr"><img src="../img/shared/facebook-icon.svg" alt="facebook icon"></a></li>
+          <li><a href="https://x.com/ConquerBlocks"><img src="../img/shared/x-icon.svg" alt="x icon"></a></li>
+          <li><a href="https://www.linkedin.com/company/conquer-x/mycompany/"><img src="../img/shared/linkedin-icon.svg" alt="linkdedin icon"></a></li>
+          <li><a href="https://www.youtube.com/channel/UCY6ncOO-7C107IR3E63EDBw"><img src="../img/shared/youtube-icon.svg" alt="youtube icon"></a></li>
+        </ul>
+      </aside>
+      <div class="legal__container">
+        <p class="copy">Copyright 2025. Made by JRRamonCP for <span>ConquerBlocks</span></p>
+        <p><a href="/proyecto_academia_conquer/pages/legal-advise.html">Aviso Legal</a></p>
+      </div>
+    </div>
+  </footer> 
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
