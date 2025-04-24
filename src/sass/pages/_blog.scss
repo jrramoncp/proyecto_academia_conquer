@@ -1,7 +1,90 @@
 @use '../abstract/_variables' as v;
 @use '../abstract/_mixins' as m;
 
+//HERE I HAVE USED THE SAME STILES THAN THE BLOG SECTION IN INDEX.HTML
+
 .blog__main{
-    height: 5rem;
-    background-color: red;
+    .blog{
+        //blog section title
+        .blog__title{
+            position: relative;
+            margin-bottom: 3rem;
+            margin-top: 3rem;
+            h2{
+                font-size: 1.7rem;
+                text-align: center;
+                padding-bottom: 2rem;
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    width: 25%;
+                    height: 2px;
+                    background: v.$conquer-gradient;
+                    bottom: 0rem;
+                    left: 50%;
+                    transform: translate(-50%);
+
+                }
+            }
+        }
+        //blog news articles
+        .news__container{
+            @include m.breakpoint("tablet"){
+                @include m.flex_reset();
+                flex-wrap: wrap;
+            }
+            @include m.breakpoint("laptop"){
+                @include m.flex_reset();
+                flex-wrap: wrap
+            }
+            @include m.breakpoint("desktop"){
+                @include m.flex_reset();
+                flex-wrap: wrap;
+            }
+            .new{
+                margin-bottom: 2rem;
+                box-shadow: v.$article-shadow;
+                @include m.breakpoint("tablet"){
+                    box-shadow: v.$article-shadow;
+                    @include m.article-design();
+                }
+                @include m.breakpoint("laptop"){
+                    box-shadow: v.$article-shadow;
+                    @include m.article-design();
+                }
+                @include m.breakpoint("desktop"){
+                    box-shadow: v.$article-shadow;
+                    @include m.article-design();
+                }
+                img{
+                    max-width: 100%;
+                    aspect-ratio: 16 / 9;
+                }
+                h3{
+                    padding-bottom: 1rem;
+                    padding: 0.5rem;
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        font-size: 1rem;
+                        color: v.$black-color;
+                        
+                    }
+                }
+                p{
+                    text-align: center;
+                    font-weight: v.$font-extralight;
+                    max-height: 100px;
+                    overflow: hidden;
+                    margin-bottom: 1rem;
+                    padding: 0.5rem;
+                }
+            }
+        }
+
+        .arrow__up{
+            text-align: center;
+        }
+    }
 }
