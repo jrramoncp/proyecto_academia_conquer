@@ -20,11 +20,9 @@ export default defineConfig({
         new_junior: resolve(__dirname, 'pages/new_junior.html'), //Noticia 4
         new_lenguaje: resolve(__dirname, 'pages/new_lenguaje.html'), //Noticia 5
         new_marketer: resolve(__dirname, 'pages/new_marketer.html'), //Noticia 6
-        // contact: resolve(__dirname, 'pages/contact.html'), // Contact
-        // login: resolve(__dirname, 'pages/login.html'), //Login
-        // noti1: resolve(__dirname, 'pages/noticia1.html'), //Noticia1
-        // noti2: resolve(__dirname, 'pages/noticia2.html'), //Noticia2
-        // registro: resolve(__dirname, 'pages/registro.html') //Registro
+        contact: resolve(__dirname, 'pages/contact.html'), // Contact
+        login: resolve(__dirname, 'pages/login.html'), //Login
+        registro: resolve(__dirname, 'pages/registro.html') //Registro
 
       },
     },

@@ -1,0 +1,81 @@
+@use '../abstract/_variables' as v;
+@use '../abstract/_mixins' as m;
+
+.contact__main{
+    .title{
+        background-color: v.$black-color;
+        .container{
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h1{
+                color: white;
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .content{
+        @include m.breakpoint("tablet"){
+            display: flex;
+        }
+        .container{
+            @include m.breakpoint("laptop"){
+                display: flex;
+                align-items: center;
+            }
+            @include m.breakpoint("desktop"){
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            h2{
+                font-size: 1.2rem;
+                padding-bottom: 1rem;
+            }
+            .contact__info{
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+                .contact__form{
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    h2{
+                        @include m.breakpoint("laptop"){
+                            max-width: 60%;
+                        }
+                    }
+                    form{
+                        div{
+                            input{
+                                margin-bottom: 1.1rem;
+                            }
+                            textarea{
+                                margin-bottom: 1rem;
+                            }
+                        }
+                    }
+                    .btn{
+                        @include m.breakpoint("laptop"){
+                            max-width: 30%;
+                        }
+                        @include m.breakpoint("desktop"){
+                            max-width: 30%;
+                        }
+                    }
+                }
+            }
+
+            .frame__map{
+                padding-bottom: 2rem;
+                iframe{
+                    @include m.breakpoint("desktop"){
+                        width: 500px;
+                    }
+                }
+            }
+
+        }
+    }
+}
