@@ -28,7 +28,7 @@
             }
             @include m.breakpoint("desktop"){
                 display: flex;
-                align-items: center;
+                // align-items: center;
                 justify-content: space-between;
             }
             h2{
@@ -53,10 +53,16 @@
                             }
                             textarea{
                                 margin-bottom: 1rem;
+                                @include m.breakpoint("tablet"){
+                                    margin-top: 1px;
+                                }
                             }
                         }
                     }
                     .btn{
+                        @include m.breakpoint("tablet"){
+                            max-width: 30%;
+                        }
                         @include m.breakpoint("laptop"){
                             max-width: 30%;
                         }
@@ -69,6 +75,7 @@
 
             .frame__map{
                 padding-bottom: 2rem;
+                padding-top: 1.5rem;
                 iframe{
                     @include m.breakpoint("desktop"){
                         width: 500px;
