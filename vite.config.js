@@ -22,8 +22,8 @@ export default defineConfig({
         new_marketer: resolve(__dirname, 'pages/new_marketer.html'), //Noticia 6
         contact: resolve(__dirname, 'pages/contact.html'), // Contact
         login: resolve(__dirname, 'pages/login.html'), //Login
-        registro: resolve(__dirname, 'pages/registro.html') //Registro
-
+        registro: resolve(__dirname, 'pages/registro.html'), //Registro
+        password_recovery: resolve(__dirname, 'pages/password_recovery.html') //Recuperacion de contraseña
       },
     },
   },
