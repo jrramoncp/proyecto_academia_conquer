@@ -1,0 +1,64 @@
+@use '../abstract/_variables' as v;
+@use '../abstract/_mixins' as m;
+
+.main__login{
+    min-height: 500px;
+    background-image: url(../img/blog/news-background.avif);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include m.breakpoint("tablet"){
+        min-height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @include m.breakpoint("laptop"){
+        min-height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @include m.breakpoint("desktop"){
+        min-height: 900px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .login__form{
+        display: flex;
+        background-color: white;
+        max-width: 90%;
+        border-radius: 15px;
+        align-items: center;
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            input{
+                max-width: 50%;
+                margin-bottom: 1rem;
+                @include m.breakpoint("tablet"){
+                    //esto es para los borders, para que se vean bien siempre
+                    margin-top: 10px;
+                    margin-left: 2px;
+                }
+                @include m.breakpoint("laptop"){
+                    //esto es para los borders, para que se vean bien siempre
+                    margin-top: 10px;
+                    margin-left: 2px;
+                }
+                @include m.breakpoint("desktop"){
+                    //esto es para los borders, para que se vean bien siempre
+                    margin-top: 10px;
+                    margin-left: 2px;
+                }
+            }
+
+            .btn{  
+                max-width: 40%;
+                margin-bottom: 1rem;
+            }
+        }
+        }
+}
