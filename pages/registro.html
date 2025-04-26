@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Conquer Blocks - Contacto</title>
+    <title>Conquer Blocks - Home</title>
   </head>
-  <body>
+  <body class="body__registro">
     <header class="header">
       <div class="container">
           <a href="../index.html"><img class="logo" src="../img/shared/logo-conquer.avif" alt="logo de conquer blocks" height="20"></a>
@@ -27,55 +27,43 @@
                       <li><a href="/proyecto_academia_conquer/pages/blog.html">Blog</a></li>
                       <li><a href="/proyecto_academia_conquer/pages/registro.html">Registro</a></li>
                       <li><a href="/proyecto_academia_conquer/pages/login.html">Login</a></li>
+                      <li><a href="/proyecto_academia_conquer/pages/contact.html">Contacto</a></li>
                   </ul>
               </nav>
           </div>
       </div>
   </header>
-  <main class="contact__main">
-    <section  class="title">
-      <div class="container">
-        <h1>Contáctanos</h1>
-      </div>
-    </section>
-    <div class="content">
-      <div class="container">
-        <section class="contact__info">
-            <article>
-              <h2>Email</h2>
-              <p>info@conquerblocks.es</p>
-            </article>
-          
-          <article class="contact__form">
-              <h2>O déjanos un mensaje y te responderemos lo antes posible</h2>
-              <form action="" method="get" enctype="multipart/form-data">
-                  <!--method="get" para que no haya problemas cuando se le de a enviar-->
-                  <div class="name">
-                    <label for="name">Nombre:</label><br>
-                    <input type="text" name="name" id="name">
-                  </div>
+  <main class="main__registro">
+    <div class="container">
+      <!-- TITULO DE LA PAGINA -->
+      <section class="title">
+        <h1>Comienza tu viaje hacia una vida mejor en </h1>
+        <img src="../img/shared/logo-conquer.avif" alt="">
+      </section>
 
-                  <div class="email">
-                    <label for="email">Email:</label> <br>
-                    <input type="email" name="email" id="email" required>
-                  </div>
-
-                  <div class="msj">
-                    <label for="comment">Comentarios:</label><br>
-                    <textarea name="comentario" id="comment" cols="15" rows="5"></textarea>
-                  </div>
-                  <button class="btn">Enviar</button>
-              </form>
-          </article>
-        </section>
-      
-        <section class="frame__map">
-            <h2>Ven a nuestras oficinas</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1381.7693303140927!2d-4.4153991095572955!3d36.72050267932188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7ea43468105%3A0x4ac313755a5eb0b6!2sAyuntamiento%20de%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1732358532203!5m2!1ses!2ses" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-      </div>
+      <!-- FORMULARIO DE REGISTRO -->
+      <section class="form">
+        <form action="" name="register">
+          <!-- no tiene action para que recargue la misma página, al no haber backend, he pensado que seria lo mejor -->
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" name="nombre" id="nombre" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password" required>
+          <label for="confirm_password">Confirmar contraseña</label>
+          <input type="password" name="confirm_password" id="confirm_password" required>
+          <div class="checkbox">
+            <input type="checkbox" name="terminos" id="terminos" required >
+            <label for="terminos">Acepto los <a href="/proyecto_academia_conquer/pages/terminos.html">Terminos y condiciones</a></label>
+          </div>
+          <button class="btn">Registrate</button>
+        </form>
+        <p>¿Ya tienes una cuenta? <a href="/proyecto_academia_conquer/pages/login.html">Inicia Sesión</a></p>
+      </section>
     </div>
-</main>
+  </main>
+
   <footer class="footer">
     <div class="container">
       <a href="index.html"><img class="logo" src="../img/shared/logo-conquer.avif" alt="logo de conquer blocks" height="20"></a>

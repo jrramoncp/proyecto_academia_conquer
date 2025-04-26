@@ -1,0 +1,124 @@
+@use '../abstract/_variables' as v;
+@use '../abstract/_mixins' as m;
+
+.body__registro{
+    //estos estilos son por que al no haber suficiente contenido el footer quedaba muy arriba. así consigo que se mantega equilibrado
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include m.breakpoint("tablet"){
+        min-height: 1024px;
+    }
+    @include m.breakpoint("laptop"){
+        min-height: 1080px;
+    }
+    @include m.breakpoint("desktop"){
+        min-height: 1080px;
+    }
+}
+.main__registro{
+    .container{
+        padding-top: 1rem;
+        .title{
+            padding-bottom: 1rem;
+            @include m.breakpoint("tablet"){
+                padding-bottom: 1.7rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            @include m.breakpoint("laptop"){
+                padding-bottom: 1.7rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            @include m.breakpoint("desktop"){
+                padding-bottom: 1.7rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            h1{
+                font-size: 1.5rem;
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+        }
+
+        .form{
+            padding-bottom: 1rem;
+            @include m.breakpoint("tablet"){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            @include m.breakpoint("laptop"){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            @include m.breakpoint("desktop"){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            form{
+                @include m.breakpoint("tablet"){
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 60%;
+                    .btn{
+                        max-width: 40%;
+                        margin-bottom: 1rem;
+                        align-self: center;
+                    }
+                }
+
+                @include m.breakpoint("laptop"){
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 60%;
+                    .btn{
+                        max-width: 40%;
+                        margin-bottom: 1rem;
+                        align-self: center;
+                    }
+                    
+                }
+
+                @include m.breakpoint("desktop"){
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 60%;
+                    .btn{
+                        max-width: 40%;
+                        margin-bottom: 1rem;
+                        align-self: center;
+                    }
+
+                }
+                input{
+                    margin-bottom: 1rem;
+                    @include m.breakpoint("tablet"){
+                        margin-top: 10px; // esto es para que el borde superior de los input se visualice correctamente, además queda bien
+                        margin-left: 1px; //idem a lo anterior pero para el margen izquierdo
+                    }
+                    @include m.breakpoint("laptop"){
+                        margin-top: 10px; // esto es para que el borde superior de los input se visualice correctamente, además queda bien
+                        margin-left: 1px;//idem a lo anterior pero para el margen izquierdo
+                    }
+                    @include m.breakpoint("desktop"){
+                        margin-top: 10px; // esto es para que el borde superior de los input se visualice correctamente, además queda bien
+                        margin-left: 1px;//idem a lo anterior pero para el margen izquierdo
+                    }
+                    
+                }
+                div{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+}
